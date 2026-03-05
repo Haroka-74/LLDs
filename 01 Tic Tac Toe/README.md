@@ -25,4 +25,23 @@ Hi, I’m Alex. I own a small coffee shop. My customers love playing Tic-Tac-Toe
 4) The system must recognize when all cells are filled without a winner (a tie).
 5) The game must display a message announcing the winner or a tie at the end of the game.
 
+# Use Cases
+
+1) **Play a Turn**
+    - The player taps an empty cell on the grid.
+    - The system verifies that the cell is empty.
+        - If the cell is occupied, the system ignores the tap and waits for a valid move.
+    - The system places the current player's symbol in the selected cell.
+    - The system checks whether the move resulted in a win.
+    - The system checks whether the move resulted in a tie.
+    - The system switches the turn indicator to the other player.
+2) **Win the Game**
+    - The system detects three identical symbols aligned in a row, column, or diagonal.
+    - The system highlights the winning line (e.g., with a bolding or glowing effect).
+    - The system displays a message announcing the winner.
+3) **Reach a Tie**
+    - The system detects that all nine cells are filled.
+    - The system confirms that no winning combination exists.
+    - The system displays a message indicating a tie.
+
 </div>
