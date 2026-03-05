@@ -17,4 +17,12 @@ Hi, I’m Alex. I own a small coffee shop. My customers love playing Tic-Tac-Toe
 - **<ins>Me</ins>** Do you want the game to keep track of wins between games, like Player X: 3, Player O: 2?
     - **<ins>Alex</ins>** No, that might create competition or arguments. Let's keep it just one game at a time with no history.
 
+# Requirements
+
+1) The game must support two players taking turns, with players labeled as "Player X" and "Player O".
+2) The game must clearly display whose turn it is at all times.
+3) The system must automatically detect when a player has three marks in a row (horizontally, vertically, or diagonally) and highlight the winning row.
+4) The system must recognize when all cells are filled without a winner (a tie).
+5) The game must display a message announcing the winner or a tie at the end of the game.
+
 </div>
