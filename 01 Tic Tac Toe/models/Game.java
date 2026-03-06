@@ -4,15 +4,17 @@ import states.Context;
 import states.PlayingState;
 
 public class Game {
-    private Symbol currentPlayer;
     private Board board;
+    private Player player1;
+    private Player player2;
 
-    public Game() {
-        currentPlayer = Symbol.X;
+    public Game(Player player1, Player player2) {
         board = new Board();
+        this.player1 = player1;
+        this.player2 = player2;
     }
 
     public void run() {
-        new Context(new PlayingState(currentPlayer, board)).execute();
+        new Context(new PlayingState(board, player1, player2)).execute();
     }
 }

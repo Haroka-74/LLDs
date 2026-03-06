@@ -1,17 +1,12 @@
 package states;
 
 import models.Board;
-import models.Symbol;
+import models.Player;
 
 public class WinState extends State {
-    private Symbol currentPlayer;
-    private Symbol nextPlayer;
-    private Board board;
 
-    public WinState(Symbol currentPlayer, Symbol nextPlayer, Board board) {
-        this.currentPlayer = currentPlayer;
-        this.nextPlayer = nextPlayer;
-        this.board = board;
+    public WinState(Board board, Player current, Player next) {
+        super(board, current, next);
     }
 
     @Override
@@ -19,9 +14,9 @@ public class WinState extends State {
         if(board.hasWinner()) {
             System.out.println(board);
             System.out.println();
-            System.out.println("Player " + currentPlayer + " wins the game!");
+            System.out.println(current.getName() + " wins the game!");
         } else {
-            context.transitionTo(new TieState(nextPlayer, board));
+            context.transitionTo(new TieState(board, current, next));
             context.execute();
         }
     }

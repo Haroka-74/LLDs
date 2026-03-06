@@ -1,15 +1,12 @@
 package states;
 
 import models.Board;
-import models.Symbol;
+import models.Player;
 
 public class TieState extends State {
-    private Symbol currentPlayer;
-    private Board board;
 
-    public TieState(Symbol currentPlayer, Board board) {
-        this.currentPlayer = currentPlayer;
-        this.board = board;
+    public TieState(Board board, Player current, Player next) {
+        super(board, current, next);
     }
 
     @Override
@@ -19,7 +16,7 @@ public class TieState extends State {
             System.out.println();
             System.out.println("It's a tie! Well played by both!");
         } else {
-            context.transitionTo(new PlayingState(currentPlayer, board));
+            context.transitionTo(new PlayingState(board, next, current));
             context.execute();
         }
     }

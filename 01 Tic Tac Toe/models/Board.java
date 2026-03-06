@@ -15,11 +15,15 @@ public class Board {
         }
     }
 
-    public boolean validate(int row, int column) {
+    public boolean validate(Position position) {
+        int row = position.getRow();
+        int column = position.getColumn();
         return row >= 0 && row < 3 && column >= 0 && column < 3 && grid[row][column] == Symbol.E;
     }
 
-    public void place(int row, int column, Symbol symbol) {
+    public void place(Position position, Symbol symbol) {
+        int row = position.getRow();
+        int column = position.getColumn();
         grid[row][column] = symbol;
     }
 
