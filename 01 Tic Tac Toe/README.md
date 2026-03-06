@@ -44,4 +44,15 @@ Hi, I’m Alex. I own a small coffee shop. My customers love playing Tic-Tac-Toe
     - The system confirms that no winning combination exists.
     - The system displays a message indicating a tie.
 
+# Follow-up Interview with Alex
+
+- **<ins>Me</ins>** Hi Alex! How's the Tic-Tac-Toe game working out in your coffee shop?
+    - **<ins>Alex</ins>** It's good, but I've been thinking. Remember when I said to keep it simple with just "Player X" and "Player O"?
+- **<ins>Me</ins>** Yes, I remember. No names, just symbols.
+    - **<ins>Alex</ins>** Well, I changed my mind. Customers have been asking if they can put their names in.
+- **<ins>Me</ins>** That makes sense. Anything else?
+    - **<ins>Alex</ins>** Actually, yes. Another thing I noticed. Quite a few people come to my shop alone.
+- **<ins>Me</ins>** What happens when they're alone?
+    - **<ins>Alex</ins>** They just sit there bored while the two-player tablet sits unused. They've asked if they can play against the tablet itself.
+
 </div>
