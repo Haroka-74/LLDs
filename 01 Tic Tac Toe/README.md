@@ -55,4 +55,9 @@ Hi, I’m Alex. I own a small coffee shop. My customers love playing Tic-Tac-Toe
 - **<ins>Me</ins>** What happens when they're alone?
     - **<ins>Alex</ins>** They just sit there bored while the two-player tablet sits unused. They've asked if they can play against the tablet itself.
 
+# New Requirements
+
+6) The game must allow customers to enter their names instead of just displaying "Player X" and "Player O".
+7) The game must include a single-player mode where customers can play against the computer when they are alone.
+
 </div>
