@@ -15,4 +15,12 @@ Hi, I'm Sarah. I manage a busy downtown parking garage. We have frequent issues 
 - **<ins>Me</ins>** Do you need payment tracking as well?
     - **<ins>Sarah</ins>** Yes. When a customer parks, the system should start a timer. When they leave, it should calculate how long they stayed and show the amount owed. We'll handle the actual payment separately at the booth.
 
+# Requirements
+
+1) The system must assign an available parking spot when a customer enters their license plate.
+2) The system must provide a ticket or display showing the assigned spot number to the customer.
+3) The system must calculate the parking fee when the customer exits using their license plate.
+4) The system must free up the parking spot after the customer exits and payment is confirmed.
+5) The system must show a visual display of which spots are occupied and which are available at any given time.
+
 </div>
