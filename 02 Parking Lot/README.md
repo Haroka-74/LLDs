@@ -23,4 +23,26 @@ Hi, I'm Sarah. I manage a busy downtown parking garage. We have frequent issues 
 4) The system must free up the parking spot after the customer exits and payment is confirmed.
 5) The system must show a visual display of which spots are occupied and which are available at any given time.
 
+# Use Cases
+
+1) **Park a Vehicle**
+    - Customer enters their license plate number.
+    - System checks for available spots.
+        - If no spots are available, system notifies customer that garage is full.
+    - System assigns an available spot to the vehicle.
+    - System displays the assigned spot number to the customer.
+    - System updates the spot to occupied on the visual display.
+2) **Exit and Pay**
+    - Customer enters their license plate number.
+    - System locates the vehicle and retrieves check-in time.
+        - If license plate is not found, system displays error message and asks customer to try again or see attendant.
+    - System calculates parking duration and fee.
+    - System displays the amount owed to the customer.
+    - After payment is confirmed at booth, system marks the spot as available.
+3) **View Occupancy Status**
+    - Staff views the occupancy screen.
+    - System displays all 50 parking spots.
+    - Available spots are shown in one color, occupied spots in another.
+    - Staff can see at a glance which spots are free and which are taken.
+
 </div>
