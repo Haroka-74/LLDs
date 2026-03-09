@@ -1,10 +1,10 @@
-import models.AI;
 import models.Game;
-import models.Human;
 import models.Player;
 import models.Symbol;
 import utils.Console;
 import java.util.Scanner;
+import strategies.AIMove;
+import strategies.HumanMove;
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
@@ -28,20 +28,20 @@ public class Main {
                 System.out.print("Enter name for O player: ");
                 String o = scanner.nextLine().trim();
 
-                player1 = new Human(x, Symbol.X);
-                player2 = new Human(o, Symbol.O);
+                player1 = new Player(x, Symbol.X, new HumanMove());
+                player2 = new Player(o, Symbol.O, new HumanMove());
             }
             case "2" -> {
                 System.out.print("Enter your name: ");
                 String name = scanner.nextLine().trim();
 
-                player1 = new Human(name, Symbol.X);
-                player2 = new AI(Symbol.O);
+                player1 = new Player(name, Symbol.X, new HumanMove());
+                player2 = new Player("AI", Symbol.O, new AIMove());
             }
             default -> {
                 System.out.println("Invalid option, starting Player vs. Player by default");
-                player1 = new Human("Player 1", Symbol.X);
-                player2 = new Human("Player 2", Symbol.O);
+                player1 = new Player("Player 1", Symbol.X, new HumanMove());
+                player2 = new Player("Player 2", Symbol.O, new HumanMove());
             }
         }
 

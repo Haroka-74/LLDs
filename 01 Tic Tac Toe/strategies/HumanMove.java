@@ -1,17 +1,15 @@
-package models;
+package strategies;
 
+import models.Board;
 import utils.Console;
+import models.Position;
 import java.util.Scanner;
 
-public class Human extends Player {
+public class HumanMove implements MoveStrategy {
     private static final Scanner scanner = new Scanner(System.in);
 
-    public Human(String name, Symbol symbol) {
-        super(name, symbol);
-    }
-
     @Override
-    public Position move(Board board) {
+    public Position move(Board board, String name) {
         while(true) {
             System.out.println(board);
             System.out.println();

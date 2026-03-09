@@ -1,15 +1,12 @@
-package models;
+package strategies;
 
+import models.Board;
 import utils.Console;
+import models.Position;
 
-public class AI extends Player {
-
-    public AI(Symbol symbol) {
-        super("AI", symbol);
-    }
-
+public class AIMove implements MoveStrategy {
     @Override
-    public Position move(Board board) {
+    public Position move(Board board, String name) {
         Console.clear();
         System.out.println(board);
         System.out.println();
